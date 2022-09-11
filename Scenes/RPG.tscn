@@ -1,13 +1,27 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://textures/pavement.jpg" type="Texture" id=1]
+[ext_resource path="res://Characters/akai.gltf" type="PackedScene" id=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
 uv1_scale = Vector3( 10, 10, 1 )
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.362462
+height = 1.27022
 
 [node name="RPG" type="Spatial"]
 
 [node name="Ground" type="CSGBox" parent="."]
 transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0 )
 material = SubResource( 1 )
+
+[node name="Player_character" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Player_character"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
+shape = SubResource( 2 )
+
+[node name="akai" parent="Player_character" instance=ExtResource( 2 )]
