@@ -4,6 +4,7 @@
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 10, 10, 1 )
 
 [node name="RPG" type="Spatial"]
 
