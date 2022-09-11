@@ -17,10 +17,19 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	match current_state:
 		IDLE:
-			pass
+			pc_node.play("idle");
 		WALK:
-			pass
+			speed = 1;
+			pc_node.play("walking");
+			var forward = global_transform.basis.z;
+			move_and_slide(forward*speed, Vector3.UP);
 		WALK_REVERSE:
-			pass
+			speed = -1;
+			pc_node.play("walking")
+			var forward = global_transform.basis.z;
+			move_and_slide(forward*speed, Vector3.UP);
 		RUN: 
-			pass
+			speed = 4;
+			pc_node.play("running");
+			var forward = global_transform.basis.z;
+			move_and_slide(forward*speed, Vector3.UP);
