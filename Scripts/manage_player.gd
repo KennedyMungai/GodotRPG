@@ -9,4 +9,6 @@ onready var pc_node = get_node("pc/AnimationPlayer");
 
 
 func _ready() -> void:
-	pass;
+	pc_node.get_animation("idle").loop = true;
+	pc_node.get_animation("walking").loop = true;
+	pc_node.get_animation("running").loop = true;
