@@ -1,3 +1,6 @@
 [gd_scene format=2]
 
 [node name="RPG" type="Spatial"]
+
+[node name="Ground" type="CSGBox" parent="."]
+transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 0 )
