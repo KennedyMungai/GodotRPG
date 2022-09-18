@@ -3,4 +3,4 @@
 [node name="house" type="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 
-[node name="CSGBox" type="CSGBox" parent="."]
+[node name="wall" type="CSGBox" parent="."]
