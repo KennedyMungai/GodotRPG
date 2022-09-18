@@ -26,62 +26,64 @@ material = SubResource( 2 )
 transform = Transform( 0.1, 0, 0, 0, 0.4, 0, 0, 0, 0.3, -0.95, -0.60107, 0 )
 material = SubResource( 3 )
 
-[node name="window1" type="CSGBox" parent="."]
+[node name="windows" type="Spatial" parent="."]
+
+[node name="window1" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.5, -0.363744, -1.00146 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window2" type="CSGBox" parent="."]
+[node name="window2" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.458639, -0.363744, -1.00146 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window3" type="CSGBox" parent="."]
+[node name="window3" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.5, -0.363744, 0.991196 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window4" type="CSGBox" parent="."]
+[node name="window4" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.458639, -0.363744, 0.991196 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window5" type="CSGBox" parent="."]
+[node name="window5" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.5, 0.505021, -1.00146 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window6" type="CSGBox" parent="."]
+[node name="window6" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.458639, 0.505021, -1.00146 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window7" type="CSGBox" parent="."]
+[node name="window7" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.5, 0.505021, 0.991196 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window8" type="CSGBox" parent="."]
+[node name="window8" type="CSGBox" parent="windows"]
 transform = Transform( 0.3, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.458639, 0.505021, 0.991196 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window9" type="CSGBox" parent="."]
+[node name="window9" type="CSGBox" parent="windows"]
 transform = Transform( -1.31134e-08, 0, -0.2, 0, 0.2, 0, 0.3, 0, -8.74228e-09, 1.01701, 0.505021, 0.474189 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window10" type="CSGBox" parent="."]
+[node name="window10" type="CSGBox" parent="windows"]
 transform = Transform( -1.31134e-08, 0, -0.2, 0, 0.2, 0, 0.3, 0, -8.74228e-09, 1.01701, 0.505021, -0.48445 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window11" type="CSGBox" parent="."]
+[node name="window11" type="CSGBox" parent="windows"]
 transform = Transform( -1.31134e-08, 0, -0.2, 0, 0.2, 0, 0.3, 0, -8.74228e-09, -0.975646, 0.505021, 0.474189 )
 depth = 0.408925
 material = SubResource( 4 )
 
-[node name="window12" type="CSGBox" parent="."]
+[node name="window12" type="CSGBox" parent="windows"]
 transform = Transform( -1.31134e-08, 0, -0.2, 0, 0.2, 0, 0.3, 0, -8.74228e-09, -0.975646, 0.505021, -0.48445 )
 depth = 0.408925
 material = SubResource( 4 )
