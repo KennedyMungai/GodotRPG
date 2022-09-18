@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://textures/pavement.jpg" type="Texture" id=1]
 [ext_resource path="res://Characters/akai.gltf" type="PackedScene" id=2]
@@ -11,6 +11,10 @@ uv1_scale = Vector3( 10, 10, 1 )
 [sub_resource type="CapsuleShape" id=2]
 radius = 0.362462
 height = 1.27022
+
+[sub_resource type="Environment" id=3]
+background_energy = 5.0
+ambient_light_color = Color( 1, 1, 1, 1 )
 
 [node name="RPG" type="Spatial"]
 
@@ -31,3 +35,6 @@ shape = SubResource( 2 )
 [node name="Camera" type="Camera" parent="Player_character"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2, -3 )
 current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
