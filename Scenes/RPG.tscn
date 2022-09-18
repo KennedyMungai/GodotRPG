@@ -41,4 +41,4 @@ current = true
 environment = SubResource( 3 )
 
 [node name="house" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62543, 2, 0 )
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 20.2223, 2, 0 )
