@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 0.1485, 0.1486, 0.15, 1 )
+albedo_color = Color( 0.098, 0.124133, 0.49, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.739728, 0.832031, 0.139755, 1 )
 
 [node name="house" type="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
@@ -10,4 +13,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 material = SubResource( 1 )
 
 [node name="roof" type="CSGBox" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+transform = Transform( 0.99, 0, 0, 0, 0.494975, -0.494975, 0, 0.494975, 0.494975, 0, 1, 0 )
+material = SubResource( 2 )
