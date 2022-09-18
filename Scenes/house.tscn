@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.098, 0.124133, 0.49, 1 )
@@ -11,6 +11,9 @@ albedo_color = Color( 0.31, 0.248, 0.062, 1 )
 
 [sub_resource type="SpatialMaterial" id=4]
 albedo_color = Color( 0.662745, 0.992157, 0.996078, 1 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1, 1.4841, 1 )
 
 [node name="house" type="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
@@ -87,3 +90,7 @@ material = SubResource( 4 )
 transform = Transform( -1.31134e-08, 0, -0.2, 0, 0.2, 0, 0.3, 0, -8.74228e-09, -0.975646, 0.505021, -0.48445 )
 depth = 0.408925
 material = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.519822, 0 )
+shape = SubResource( 5 )
