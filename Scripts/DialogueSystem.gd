@@ -27,6 +27,13 @@ func _process(delta: float) -> void:
 				dialogue_is_active = false;
 				waiting_for_user_input = true;
 				current_dialogue_index = 0;
+		else:
+			if(Input.is_action_just_released("dialogue_choice_1")):
+				current_dialogue_index = return_target(0);
+				waiting_for_user_input = false;
+			if(Input.is_action_just_released("dialogue_choice_2")):
+				current_dialogue_index = return_target(1);
+				waiting_for_user_input = false;
 
 
 func read_json_file() -> void:
