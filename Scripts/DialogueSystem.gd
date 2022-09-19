@@ -54,3 +54,16 @@ func read_json_file() -> void:
 			
 			for choice in dialogue.choices:
 				print("-> Option: "+choice.content);
+				
+
+func return_target(the_choice:int) -> int:
+	var the_target=-1;
+	print("Return target");
+	
+	for character in characters:
+		var name = characters[character].name;
+		
+		if(name == current_character):
+			the_target = int(characters[character].dialogues[current_dialogue_index].choices[the_target].target);
+			
+	return the_target;
