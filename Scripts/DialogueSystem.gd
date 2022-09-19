@@ -18,6 +18,16 @@ onready var dialogue_image = get_node("../dialogue_panel/dialogue_image");
 func _ready() -> void:
 	read_json_file();
 
+func _process(delta: float) -> void:
+	if(dialogue_is_active):
+		if(!waiting_for_user_input):
+			if(current_dialogue_index != -1):
+				display_dialogue1_for_character(current_character);
+			else:
+				dialogue_is_active = false;
+				waiting_for_user_input = true;
+				current_dialogue_index = 0;
+
 
 func read_json_file() -> void:
 	var file = File.new();
