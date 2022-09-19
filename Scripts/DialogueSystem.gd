@@ -13,3 +13,11 @@ onready var player = get_node("../Player_character");
 onready var dialogue_panel = get_node("../dialogue_panel");
 onready var dialogue_text = get_node("../dialogue_panel/dialogue_text");
 onready var dialogue_image = get_node("../dialogue_panel/dialogue_image");
+
+
+func read_json_file() -> void:
+	var file = File.new();
+	file.open("res://Dialogues/dialogues.json");
+	var json_data = parse_json(file.get_as_text());
+	var json = to_json(json_data);
+	characters = JSON.parse(json).result;
