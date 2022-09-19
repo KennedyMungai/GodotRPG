@@ -10,3 +10,6 @@ var dialogue_is_active
 var characters: Dictionary;
 var current_character:String="Diana";
 onready var player = get_node("../Player_character");
+onready var dialogue_panel = get_node("../dialogue_panel");
+onready var dialogue_text = get_node("../dialogue_panel/dialogue_text");
+onready var dialogue_image = get_node("../dialogue_panel/dialogue_image");
