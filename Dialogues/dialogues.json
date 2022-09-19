@@ -1,0 +1,61 @@
+{
+	
+		"Diana":
+		{
+
+			"name":"Diana",
+			"dialogues":
+			[
+				{
+					"id" : "0",
+					"content": "Hello Stranger! What brings you here!",
+					"choices":
+					[
+						{"content":"Hi there, would you know where I can find the golden globe?", "target":"2"},
+						{"content": "Hi there, are you from here, Im kind of lost?", "target":"1"}
+
+					]
+
+				},
+				{
+					"id" : "1",
+					"content": "yes, I have been living here for decades, what bring you here",
+					"choices":
+					[
+						{"content":"I am looking for teh golden globe", "target":"2"},
+						{"content":"None of your business!", "target":"-1"}
+
+					]
+
+				},
+				{
+					"id" : "2",
+					"content": "The Golden globe, yes; it is in the yellow house!",
+					"choices":
+					[
+						{"content":"Thank you!", "target":"-1"},
+						{"content":"Brilliant, would you also know about where to find the yellow house", "target":"3"}
+
+					]
+
+				},	
+					{
+					"id" : "3",
+					"content": "Of course, this house is about 100 meters north from here!",
+					"choices":
+					[
+						{"content":"Thanks man; much appreciated!", "target":"-1"},
+						{"content":"Brilliant", "target":"-1"}
+
+					]
+
+				}
+
+
+
+			]
+
+		}
+
+
+}
