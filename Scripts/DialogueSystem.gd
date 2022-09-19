@@ -21,3 +21,15 @@ func read_json_file() -> void:
 	var json_data = parse_json(file.get_as_text());
 	var json = to_json(json_data);
 	characters = JSON.parse(json).result;
+	
+	for character in characters:
+		var name = characters[character].name;
+		print("Name: "+name);
+		
+		for dialogue in characters[character].dialogues:
+			print("Message: "+dialogue.content);
+			print("-> Option A: "+dialogue.choices[0].content);
+			print("-> Option B: "+dialogue.choices[1].content);
+			
+			for choice in dialogue.choices:
+				print("-> Option: "+choice.content);
