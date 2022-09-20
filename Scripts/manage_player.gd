@@ -18,6 +18,7 @@ func _ready() -> void:
 	pc_node.get_animation("idle").loop = true;
 	pc_node.get_animation("walking").loop = true;
 	pc_node.get_animation("running").loop = true;
+	dialogue_panel.hide();
 
 
 func _process(delta: float) -> void:
