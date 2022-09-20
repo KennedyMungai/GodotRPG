@@ -33,6 +33,7 @@ func _process(delta: float) -> void:
 				dialogue_panel.hide();
 				waiting_for_user_input = true;
 				current_dialogue_index = 0;
+				player.end_talking();
 		else:
 			if(Input.is_action_just_released("dialogue_choice_1")):
 				current_dialogue_index = return_target(0);
