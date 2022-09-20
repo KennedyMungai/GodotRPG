@@ -664,3 +664,9 @@ script = ExtResource( 6 )
 [node name="Diana" type="CSGBox" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6 )
 script = ExtResource( 8 )
+
+[node name="dialogue_panel" type="ColorRect" parent="."]
+margin_left = 15.0
+margin_top = 363.0
+margin_right = 1015.0
+margin_bottom = 563.0
