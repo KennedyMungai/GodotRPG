@@ -40,6 +40,18 @@ func _process(delta: float) -> void:
 			pc_node.play("running");
 			var forward = global_transform.basis.z;
 			move_and_slide(forward*speed, Vector3.UP);
+			
+
+func _physics_process(delta: float) -> void:
+	for index in get_slide_count():
+		var collision = get_slide_collision(index);
+		
+		if(collision.collider.is_in_group("NPC_TALK")):
+			if(collision.collider.name == "Diana" && !is_talking):
+				dialogue_image.texture = load("res://Images/Diana.jpg");
+				collision.collider.start_dialogue();
+				current_state = IDLE;
+				is_talking = true;
 
 
 func _input(event: InputEvent) -> void:
