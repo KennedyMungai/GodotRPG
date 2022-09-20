@@ -26,7 +26,8 @@ func _process(delta: float) -> void:
 			dialogue_panel.show();
 			
 			if(current_dialogue_index != -1):
-				display_dialogue1_for_character(current_character);
+#				display_dialogue1_for_character(current_character);
+				display_dialogue2_for_character(current_character);
 			else:
 				dialogue_is_active = false;
 				waiting_for_user_input = true;
