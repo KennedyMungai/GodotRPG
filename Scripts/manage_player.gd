@@ -5,7 +5,13 @@ enum {IDLE, WALK, WALK_REVERSE, RUN};
 var rotation_increment = 0.2;
 var current_state=IDLE;
 var speed = 1;
+var name_of_current_npc_talking: String = "";
+var is_talking: bool = false;
+
 onready var pc_node = get_node("pc/AnimationPlayer");
+onready var dialogue_panel = get_node("../dialogue_panel");
+onready var dialogue_box = get_node("../dialogue_panel/dialogue_box");
+onready var dialogue_image = get_node("../dialogue_panel/dialogue_image");
 
 
 func _ready() -> void:
