@@ -670,3 +670,7 @@ margin_left = 15.0
 margin_top = 363.0
 margin_right = 1015.0
 margin_bottom = 563.0
+
+[node name="dialogue_text" type="RichTextLabel" parent="dialogue_panel"]
+margin_right = 1000.0
+margin_bottom = 200.0
