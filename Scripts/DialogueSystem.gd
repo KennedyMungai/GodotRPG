@@ -23,6 +23,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if(dialogue_is_active):
 		if(!waiting_for_user_input):
+			dialogue_panel.show();
+			
 			if(current_dialogue_index != -1):
 				display_dialogue1_for_character(current_character);
 			else:
