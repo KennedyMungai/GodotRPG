@@ -30,6 +30,7 @@ func _process(delta: float) -> void:
 				display_dialogue2_for_character(current_character);
 			else:
 				dialogue_is_active = false;
+				dialogue_panel.hide();
 				waiting_for_user_input = true;
 				current_dialogue_index = 0;
 		else:
