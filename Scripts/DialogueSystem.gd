@@ -49,13 +49,13 @@ func read_json_file() -> void:
 		var name = characters[character].name;
 		print("Name: "+name);
 		
-		for dialogue in characters[character].dialogues:
-			print("Message: "+dialogue.content);
-			print("-> Option A: "+dialogue.choices[0].content);
-			print("-> Option B: "+dialogue.choices[1].content);
-			
-			for choice in dialogue.choices:
-				print("-> Option: "+choice.content);
+#		for dialogue in characters[character].dialogues:
+#			print("Message: "+dialogue.content);
+#			print("-> Option A: "+dialogue.choices[0].content);
+#			print("-> Option B: "+dialogue.choices[1].content);
+#
+#			for choice in dialogue.choices:
+#				print("-> Option: "+choice.content);
 				
 
 func return_target(the_choice:int) -> int:
