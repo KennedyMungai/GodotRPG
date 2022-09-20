@@ -88,3 +88,17 @@ func display_dialogue1_for_character(the_name:String):
 func start_dialogue() -> void:
 	waiting_for_user_input = false;
 	dialogue_is_active = true;
+
+
+func display_dialogue2_for_character(the_name: String) -> void:
+	for character in characters:
+		var name = characters[character].name;
+		var text_to_display = "["+ the_name +"]\n"
+		
+		if(name == the_name):
+			text_to_display += "Message: " + characters[character].dialogues[current_dialogue_index].content;
+			text_to_display += "\n-> Option 1: " + characters[character].dialogues[current_dialogue_index].choices[0].content;
+			text_to_display += "\n-> Option 2: " + characters[character].dialogues[current_dialogue_index].choices[1].content;
+			
+			dialogue_text.text = text_to_display;
+			waiting_for_user_input = true;
