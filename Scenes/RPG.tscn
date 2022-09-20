@@ -674,3 +674,5 @@ margin_bottom = 563.0
 [node name="dialogue_text" type="RichTextLabel" parent="dialogue_panel"]
 margin_right = 1000.0
 margin_bottom = 200.0
+
+[node name="dialogue_image" type="Sprite" parent="dialogue_panel"]
