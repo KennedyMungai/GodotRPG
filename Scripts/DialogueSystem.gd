@@ -17,7 +17,7 @@ onready var dialogue_image = get_node("../dialogue_panel/dialogue_image");
 
 func _ready() -> void:
 	read_json_file();
-	start_dialogue();
+#	start_dialogue();
 	
 
 func _process(delta: float) -> void:
