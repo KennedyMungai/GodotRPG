@@ -72,3 +72,10 @@ func _input(event: InputEvent) -> void:
 	
 	if(Input.is_key_pressed(KEY_SHIFT)):
 		current_state = RUN;
+
+
+func end_talking():
+	is_talking = false;
+	var forward = global_transform.basis.z;
+	move_and_slide(-forward * 1.5, Vector3.UP);
+	rotate_y(3.14);
