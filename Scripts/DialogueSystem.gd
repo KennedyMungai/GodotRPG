@@ -67,3 +67,18 @@ func return_target(the_choice:int) -> int:
 			the_target = int(characters[character].dialogues[current_dialogue_index].choices[the_target].target);
 			
 	return the_target;
+	
+	
+func display_dialogue1_for_character(the_name:String):
+	for character in characters:
+		var name = characters[character].name;
+		
+		if(name == the_name):
+			print("Message: "+characters[character].dialogues[current_dialogue_index].content);
+			print("1: "+characters[character].dialogues[current_dialogue_index].choices[0].content);
+			print("2: "+characters[character].dialogues[current_dialogue_index].choices[1].content);
+
+
+func start_dialogue() -> void:
+	waiting_for_user_input = false;
+	dialogue_is_active = true;
