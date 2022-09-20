@@ -55,6 +55,9 @@ func _physics_process(delta: float) -> void:
 
 
 func _input(event: InputEvent) -> void:
+	if(is_talking):
+		return;
+	
 	if(Input.is_action_pressed("move_fwd")):
 		current_state = WALK;
 	elif(Input.is_action_pressed("move_back")):
