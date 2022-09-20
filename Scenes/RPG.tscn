@@ -671,10 +671,17 @@ margin_left = 15.0
 margin_top = 363.0
 margin_right = 1015.0
 margin_bottom = 563.0
+color = Color( 0, 0.0901961, 0.407843, 0.254902 )
 
 [node name="dialogue_text" type="RichTextLabel" parent="dialogue_panel"]
 margin_right = 1000.0
 margin_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+text = "cvbnjklkjjkjk"
+fit_content_height = true
+scroll_following = true
 
 [node name="dialogue_image" type="Sprite" parent="dialogue_panel"]
 position = Vector2( 69.375, -85.125 )
