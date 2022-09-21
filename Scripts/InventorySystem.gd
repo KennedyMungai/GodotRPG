@@ -20,3 +20,8 @@ func _ready() -> void:
 	new_item=Item.new(Item.item_type.MEAT);
 	player_inventory.push_back(new_item);
 	player_inventory[1].nb=300;
+
+
+func check_inventory():
+	for i in range(player_inventory.size()):
+		print(player_inventory[i].item.info());
