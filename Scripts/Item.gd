@@ -41,3 +41,66 @@ func _init(the_new_type) -> void:
 			description="A nice piece of cooked meat to nurture your muscles";
 			family_type=item_family_type.FOOD;
 			article="some";
+		item_type.RED_DIAMOND:
+			name="Red diamond";
+			price=250;
+			health_benefits=0;
+			damage=0;
+			nb=1;
+			max_nb=10;
+			description="A valuable diamond crafted by the best jewellers woth some known magic properties";
+			family_type=item_family_type.LOOT;
+			article="a";
+		item_type.YELLOW_DIAMOND:
+			name="Yellow Diamond";
+			price=200;
+			health_benefits=0;
+			damage=0;
+			nb=1;
+			max_nb=10;
+			description="A valuable diamond crafted by the best jewellers with some known magic properties";
+			family_type=item_family_type.LOOT;
+			article="a";
+		item_type.BLUE_DIAMOND:
+			name="Blue Diamond";
+			price=100;
+			health_benefits=0;
+			damage=0;
+			nb=1;
+			max_nb=10;
+			description="A valuable diamond crafted by the best jewellers with some known magic properties";
+			family_type=item_family_type.LOOT;
+			article="a";
+		item_type.GOLD:
+			name="Gold";
+			price=100;
+			health_benefits=0;
+			damage=0;
+			nb=10;
+			max_nb=10;
+			description="Gold Coins";
+			family_type=item_family_type.LOOT;
+			article="some";
+		item_type.SWORD:
+			name="Sword";
+			price=100;
+			health_benefits=0;
+			damage=10;
+			nb=1;
+			max_nb=1;
+			description="A powerful sword that defeats most opponents";
+			family_type=item_family_type.WEAPON;
+			article="a";
+		item_type.BATON:
+			name="Baton";
+			price=50;
+			health_benefits=0;
+			damage=50;
+			nb=1;
+			max_nb=1;
+			description="A simple wooden stick that you can handle easily";
+			family_type=item_family_type.WEAPON;
+			article="a";
+	
+	type=the_new_type;
+			
