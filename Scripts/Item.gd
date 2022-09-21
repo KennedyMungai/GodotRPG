@@ -104,3 +104,15 @@ func _init(the_new_type) -> void:
 	
 	type=the_new_type;
 			
+
+func get_texture_path():
+	var tx="";
+	
+	if(family_type == item_family_type.WEAPON):
+		return "res://item_images/"+name.replace("", "_")+	".png";
+	elif(family_type == item_family_type.FOOD):
+		return "res://item_images/"+name.replace("", "_")+".png";
+	elif(family_type == item_family_type.LOOT):
+		return "res://item_images/"+name.replace("", "_")+".png";
+	else:
+		return "";
