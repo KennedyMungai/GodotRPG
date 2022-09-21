@@ -686,3 +686,18 @@ scroll_following = true
 position = Vector2( 69.375, -85.125 )
 scale = Vector2( 0.0213379, 0.0206543 )
 texture = ExtResource( 9 )
+
+[node name="inventory" type="Node2D" parent="."]
+
+[node name="inventory_panel" type="ColorRect" parent="inventory"]
+margin_left = 184.0
+margin_top = 37.0
+margin_right = 884.0
+margin_bottom = 337.0
+color = Color( 1, 1, 1, 0.247059 )
+
+[node name="inventory_description" type="RichTextLabel" parent="inventory"]
+margin_left = 435.0
+margin_top = 125.0
+margin_right = 635.0
+margin_bottom = 225.0
