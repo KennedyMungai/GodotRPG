@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://textures/pavement.jpg" type="Texture" id=1]
 [ext_resource path="res://Characters/akai.gltf" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scenes/top_arrow.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/NPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Images/avatar.jpg" type="Texture" id=9]
+[ext_resource path="res://Scripts/InventorySystem.gd" type="Script" id=10]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
@@ -44,6 +45,9 @@ current = true
 
 [node name="top_arrow" parent="Player_character" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, -2.85 )
+
+[node name="inventory_system" type="Node" parent="Player_character"]
+script = ExtResource( 10 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 3 )
