@@ -701,3 +701,5 @@ margin_left = 435.0
 margin_top = 125.0
 margin_right = 635.0
 margin_bottom = 225.0
+
+[node name="inventory_image" type="Sprite" parent="inventory"]
