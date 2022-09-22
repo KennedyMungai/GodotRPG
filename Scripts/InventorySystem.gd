@@ -22,6 +22,15 @@ func _ready() -> void:
 	player_inventory[1].nb=300;
 
 
+func _process(delta: float) -> void:
+	if(is_visible):
+#		Some code to be added
+		pass;
+	else:
+		if(Input.is_action_just_pressed("inventory")):
+			is_visible=true;
+
+
 func check_inventory():
 	for i in range(player_inventory.size()):
 		print(player_inventory[i].item.info());
