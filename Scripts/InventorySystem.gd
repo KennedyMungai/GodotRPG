@@ -27,5 +27,6 @@ func check_inventory():
 		print(player_inventory[i].item.info());
 
 
-func item_info() -> String:
+func item_info() -> String:	
 	var info = "name: "+str(name)+", health benefits: "+str(health_benefits)+", damage: "+str(damage)+", nb: "+str(nb) + ", max Nb: "+str(max_nb)+", type:"+ str(item_type_names[type]);
+	return info;
