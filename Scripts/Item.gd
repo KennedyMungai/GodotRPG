@@ -116,3 +116,8 @@ func get_texture_path():
 		return "res://item_images/"+name.replace("", "_")+".png";
 	else:
 		return "";
+
+
+func item_info() -> String:	
+	var info = "name: "+str(name)+", health benefits: "+str(health_benefits)+", damage: "+str(damage)+", nb: "+str(nb) + ", max Nb: "+str(max_nb)+", type:"+ str(item_type_names[type]);
+	return info;

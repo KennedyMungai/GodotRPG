@@ -13,7 +13,7 @@ onready var inventory_panel=get_node(path+"inventory_panel");
 
 
 func _ready() -> void:
-	display_ui(false);
+#	display_ui(false);
 	player_inventory=[];
 	var new_item = Item.new(Item.item_type.GOLD);
 	player_inventory.push_back(new_item);
@@ -26,7 +26,3 @@ func check_inventory():
 	for i in range(player_inventory.size()):
 		print(player_inventory[i].item.info());
 
-
-func item_info() -> String:	
-	var info = "name: "+str(name)+", health benefits: "+str(health_benefits)+", damage: "+str(damage)+", nb: "+str(nb) + ", max Nb: "+str(max_nb)+", type:"+ str(item_type_names[type]);
-	return info;

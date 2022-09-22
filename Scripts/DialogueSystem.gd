@@ -103,3 +103,5 @@ func display_dialogue2_for_character(the_name: String) -> void:
 			
 			dialogue_text.text = text_to_display;
 			waiting_for_user_input = true;
+			
+
