@@ -13,7 +13,7 @@ onready var inventory_panel=get_node(path+"inventory_panel");
 
 
 func _ready() -> void:
-#	display_ui(false);
+	display_ui(false);
 	player_inventory=[];
 	var new_item = Item.new(Item.item_type.GOLD);
 	player_inventory.push_back(new_item);
@@ -26,3 +26,15 @@ func check_inventory():
 	for i in range(player_inventory.size()):
 		print(player_inventory[i].item.info());
 
+
+func display_ui(toggle: bool) -> void:
+	if(toggle):
+		inventory_text.show();
+		inventory_panel.show();
+		inventory_image.show();
+		inventory_description.show();
+	else:
+		inventory_text.hide();
+		inventory_panel.hide();
+		inventory_image.hide();
+		inventory_description.hide();
