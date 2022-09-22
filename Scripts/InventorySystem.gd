@@ -24,8 +24,16 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if(is_visible):
-#		Some code to be added
-		pass;
+		display_ui(true);
+		var current_item = player_inventory[current_inventory_index];
+		inventory_text.text = current_item.name + "[" + str(current_item.nb) + "]";
+		inventory_description.text = current_item.description + "\n\n Press [U] to select";
+		inventory_image.texture = load(current_item.get_texture_path());
+		
+		if(Input.is_action_just_pressed("inventory")):
+			current_inventory_index = 0;
+			is_visible = false;
+			display_ui(false);
 	else:
 		if(Input.is_action_just_pressed("inventory")):
 			is_visible=true;
